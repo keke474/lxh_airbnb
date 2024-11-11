@@ -13,7 +13,7 @@ const EntireFilter = memo((props) => {
     const newSelectedItem = [...selectItem]
     if (newSelectedItem.includes(item)) { // 如果包含，则移除
 
-      const itemIndex = newSelectedItem.findIndex((i) => i == item)
+      const itemIndex = newSelectedItem.findIndex((i) => i === item)
       newSelectedItem.splice(itemIndex, 1)
 
     } else {
